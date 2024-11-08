@@ -1,0 +1,63 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 20px;
+  border: none;
+  width: 100%;
+}
+
+
+.navbar .logo {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #313131;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-decoration: none;
+}
+
+
+
+.navbar .nav-links {
+  display: flex;
+  font-family: 'fira code';
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 50px;
+  margin: 20px;
+}
+
+
+.navbar .nav-links a {
+  text-decoration: none;
+  color: #2b2b2b;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 15px;
+
+  padding: 5px 0;
+  transition: color 0.3s ease;
+}
+
+.navbar .nav-links a:hover {
+  color: #f7f7f7;
+}
+
+.navbar .avatar {
+  display: flex;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+}
+.profile{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}

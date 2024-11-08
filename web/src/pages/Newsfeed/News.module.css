@@ -1,0 +1,303 @@
+.newsContainer {
+   max-width: 100vw;
+   margin: 0 auto;
+   padding: 20px;
+   min-height: 100vh;
+   background-color: #f8f9fa;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ }
+
+ .headingContainer {
+   text-align: center;
+   margin-top: 10px;
+   margin-bottom: 20px;
+   animation: fadeIn 2s ease-in;
+}
+
+.mainHeading {
+   font-size: 3rem;
+   font-weight: bold;
+   color: #2c3e50;
+   position: relative;
+   animation: slideIn 1.5s ease-out;
+   
+}
+
+.highlight {
+   color: #e74c3c;
+   animation: pulse 1.5s infinite;
+}
+
+.supportLine {
+   font-size: 1.2rem;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   color: #81898b;
+   font-weight: 600px;
+   margin-top: 5px;
+   animation: fadeIn 2s ease-in;
+   margin-bottom: 40px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+   from {
+       opacity: 0;
+   }
+   to {
+       opacity: 1;
+   }
+}
+
+@keyframes slideIn {
+   from {
+       transform: translateY(-50px);
+       opacity: 0;
+   }
+   to {
+       transform: translateY(0);
+       opacity: 1;
+   }
+}
+
+@keyframes pulse {
+   0% {
+       transform: scale(1);
+   }
+   50% {
+       transform: scale(1.1);
+   }
+   100% {
+       transform: scale(1);
+   }
+}
+
+ 
+ .searchBar {
+   display: flex;
+   justify-content: center;
+  
+   margin-bottom: 20px;
+   
+ }
+ 
+ .inputField {
+   width: 50%;
+   padding: 10px;
+   font-size: 1rem;
+   border:2px solid #333;
+   
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   font-weight: 600;
+   border-radius: 50px;
+   
+ }
+
+ .searchButton {
+   padding: 10px 20px;
+   margin-left: 10px;
+   background-color: #232323;
+   color: rgb(142, 142, 142);
+   border: none;
+   border-radius: 50px;
+   cursor: pointer;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   font-weight: 600;
+   transition: background-color 0.3s;
+   letter-spacing: 1px;
+   
+   
+ }
+ 
+ .searchButton:hover {
+   background-color: #e8e8e8;
+   color: #232323;
+   
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+   border: 1px solid #343434;
+ }
+ 
+ .filterButtons {
+   display: flex;
+   justify-content: center;
+   gap: 3vw;
+   margin-bottom: 40px;
+ }
+ 
+ .button {
+   padding: 10px 25px;
+   min-width: 7vw;
+   height: 8vh;
+   background-color: #e6e6e6;
+   color: rgb(117, 117, 117);
+   border: none;
+   border-radius: 50px;
+   font-size: 0.9rem;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   font-weight: 600;
+   cursor: pointer;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+   transition: background-color 0.3s;
+ }
+ 
+ .button:hover {
+   background-color: #bfe4f0;
+   color: rgb(1, 47, 56);
+ }
+
+ .selectedButton {
+  background-color: #a1e7ff;
+   color: rgb(1, 47, 56);
+   transition: background-color 0.3s;
+}
+
+
+.newsList {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+  padding: 0vh 3vw;
+  max-width: 100vw;
+  margin: 0 auto;
+  background-color: #f8f9fa;
+}
+
+.newsCard {
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  transition: transform 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* Random heights to create uneven feel */
+  height: auto;
+}
+
+.newsCard:hover {
+  transform: translateY(-5px);
+}
+
+.imageContainer {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.newsCard:hover .image {
+  transform: scale(1.1);
+}
+
+.tag {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: rgb(49, 49, 49);
+  color: rgb(196, 196, 196);
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 10px;
+  opacity: 0.6;
+  
+}
+
+
+.cardContent {
+  padding: 20px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.title {
+  font-size: 25px;
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+.date {
+  font-size: 14px;
+  font-weight: bold;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+.description {
+  font-size: 16px;
+  line-height: 1.6;
+  flex-grow: 1;
+  color: #333;
+  margin-bottom: 10px;
+ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.readMore {
+  font-weight: bold;
+  color: red;
+  text-decoration: none;
+  border-bottom: 2px solid red;
+  padding-bottom: 2px;
+  transition: color 0.3s;
+  text-align: center;
+  margin-top: auto;
+}
+
+.readMore:hover {
+  color: darkred;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .newsList {
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  .newsList {
+      grid-template-columns: 1fr;
+  }
+}
+
+
+/* HTML: <div class="loader"></div> */
+
+.load{
+  display: flex;
+  justify-content: center;
+  
+ 
+}
+.loader {
+  width: fit-content;
+  font-weight: bold;
+  font-family: monospace;
+  font-size: 30px;
+  background:linear-gradient(90deg,#000 50%,#0000 0) right/200% 100%;
+  animation: l21 2s infinite linear;
+}
+.loader::before {
+  content :"Loading News...";
+  color: #0000;
+  padding: 0 5px;
+  background: inherit;
+  background-image: linear-gradient(90deg,#fff 50%,#000 0);
+  -webkit-background-clip:text;
+          background-clip:text;
+}
+
+@keyframes l21{
+  100%{background-position: left}
+}

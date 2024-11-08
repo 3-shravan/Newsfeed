@@ -1,0 +1,85 @@
+/*-------------HERO SECTION--------------*/
+
+
+.landingPage {
+  height: calc(100vh - 60px);
+}
+.landingPage,
+.landingPage .heroContent {
+  margin: 0;
+  padding: 0;
+}
+
+.landingPage .heroContent {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 60px);
+  padding: 2rem 1rem;
+  /* background-image: url("../src/assets/bg.jpg"); */
+  background-color: #232323;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.specialcharacter {
+  color: rgb(255, 0, 0);
+}
+
+
+.landingPage .heroContent::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.landingPage .heroContent h1,
+.landingPage .heroContent p {
+  position: relative;
+  z-index: 2;
+}
+
+.landingPage .heroContent h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 1rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+.landingPage .heroContent p {
+  font-size: 1.2rem;
+  color: #636363;
+  text-align: center;
+  margin: 10px;
+  font-weight: bold;
+}
+
+/*-------------------SERVICES-------------------*/
+#services {
+  background-color: var(--forest-green);
+  color: red;
+  padding: 35px 20px;
+  text-align: center;
+  
+}
+
+#services h2 {
+  font-size: 3rem;
+  margin-bottom: 40px;
+  color:rgb(87, 87, 87);
+  text-shadow: 0 6px 10px rgba(0, 0, 0, 0.4);
+  font-weight: 700;
+}
+
+
+
